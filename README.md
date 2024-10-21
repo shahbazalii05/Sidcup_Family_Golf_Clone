@@ -17,7 +17,9 @@ Welcome to the **Sidcup Family Golf Clone** project! This is an animated website
 - **GSAP (GreenSock Animation Platform)** for animations.
 
 ## Desktop View
-[Document.webm](https://github.com/user-attachments/assets/fe287ddd-0c92-4bfc-8a81-ffc578de9e08)
+
+https://github.com/user-attachments/assets/71e58a16-2f08-4ba3-aa4a-ff503c1e04d4
+
 
 
 ## Technology Stack
