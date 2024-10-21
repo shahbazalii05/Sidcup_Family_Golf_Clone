@@ -1,0 +1,545 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Montserrat&family=Open+Sans&family=Oswald:wght@300;400&family=Roboto:wght@100&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.nav{
+    height: 120px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 105px;
+    gap: 25px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    position: fixed;
+    z-index: 100;
+}
+
+/* .nav img:hover{
+    height: 60px;
+} */
+/* .nav li:hover{
+    color: black;
+    cursor: pointer;
+} */
+
+.cursior{
+    height: 20px;
+    width: 20px;
+    background-color: #b7f900;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 111;
+    pointer-events: none;
+}
+
+.cursior-blur{
+    height: 250px;
+    width: 250px;
+    background-color: #b7f90035;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(30px);
+    z-index: 5;
+}
+
+.nav img{
+    height: 65px;
+    /* width: 67px; */
+    transition: all ease 0.3s;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.page1 h1{
+     font-size: 5.7rem;
+     font-weight: 900;
+     position: relative;
+}
+
+.page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 1px #b7f900;
+    z-index: -1;
+
+}
+
+.page1 h2{
+    font-weight: 900;
+}
+
+.page1 p{
+    font-size: 20px;
+    /* font-weight: 100; */
+    width: 51%;
+    text-align: center;
+    margin: 1rem auto 0;
+}
+
+.page2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.page2 .scroller{
+    padding: 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 11;
+}
+
+.scroller .in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scrole;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.scroller p{
+    color: black;
+    display: inline-block;
+    font-size: 6rem;
+    font-weight: 900;
+    margin-left: 10px;
+    -webkit-text-stroke: white 1px;
+    text-transform: uppercase;
+    transition: all linear 0.3s;
+}
+
+.scroller p:hover{
+    color: #b7f900;
+    cursor: default;
+}
+
+@keyframes scrole {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    } 
+}
+
+.about{
+    height: 60vh;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 10;
+}
+.about img  {
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about .text  {
+    height: 50vh;
+    width: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.about .text h1{
+    font-size: 2.3rem;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.about .text p{
+    font-size: 20px;
+    margin: 1rem auto 0;
+    line-height: 35px;
+}
+
+.dot-img{
+    height: 150px;
+    width: 150px;
+    position:absolute;
+    left: 7%;
+    top: 10px;
+    z-index: 1;
+}
+.card-container{
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.cards{
+    height: 80%;
+    width: 25%;
+    background-color: blue;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    /* transition: all ease 0.1s; */
+}
+
+#card1{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C682&ssl=1");
+}
+#card2{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C1024&ssl=1");
+}
+#card3{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C682&ssl=1");
+}
+
+.cards .cards-in{
+    height: 100%;
+    width: 100%;
+    background-color: #a7df0f;
+    border-radius: 20px;
+    padding: 80px 28px 20px;
+    color: black;
+    text-align: left;
+    transition: all ease 0.8s;
+    opacity: 0;
+}
+
+.cards:hover .cards-in{
+    opacity: 1; 
+    cursor: pointer;
+}
+
+.cards-in #icon{
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 30%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 100%;
+    font-size: 40px;
+    font-weight: 200;
+    transition: all ease 0.5s;
+}
+
+#icon:hover {
+    background-color: white;
+}
+.cards-in #icon i{
+    color: black;
+}
+
+.cards-in h1{
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.cards-in p{
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.offers{
+    width: 100%;
+    height: 45vh;
+    /* background-color: #a7df0f; */
+    background-image: linear-gradient(to top right, #b0ee06, #20bf20e6);
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.offers .text {
+    width: 50vw;  
+    padding: 85px 0;
+}
+.offers .text p{
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: black;
+}
+.offers img{
+    height: 100%;
+    width: 13%;
+    opacity: 0.4;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.offers #img1{
+    margin-left: 10px;
+    transform: rotate(180deg);
+}
+
+.img-scroler{
+    margin-top: 50px;
+    width: 100%;
+    height: 64vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.fimgdiv{
+    width: 100%;
+    height: 50vh;
+    transform: rotate(-3deg) translateY(10%);
+}
+.img-div{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: hidden; */
+    /* white-space: nowrap;  */
+    animation: moveRight 15s linear infinite;
+}
+
+.slid-img{
+    height: 80%;
+}
+
+.slid-img img{
+    height: 100%;
+    margin: 0 20px;
+    border-radius: 20px;   
+    /* white-space: nowrap; */
+}
+
+@keyframes moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%) ;
+    }
+  }
+
+  .instagram {
+    position: absolute;
+    right: 10%;
+    transform: rotate(-3deg) translateY(10%);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+  }
+  .instagram p{
+    font-weight: 900;
+    
+  }
+
+  .instagram:hover p,
+.instagram:hover i {
+    color: #b7f900;
+}
+
+.page3{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3 img{
+    height: 40px;
+    position: absolute;
+}
+.page3 #para{
+    width: 60%;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-align: center;
+    line-height: 40px;
+}
+
+.page3 #colen1{
+    left: 10%;
+    top: 20%;
+}
+
+.page3 #colen2{
+    right: 10%;
+    bottom: 20%;
+}
+.page4{
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page4 #lastp{
+    z-index: 11;
+    position: relative;
+    top: 70px;
+    font-size: 4rem;
+    font-weight: 900;
+
+}
+
+#lastp p{
+    color: black;
+    -webkit-text-stroke: 1.5px white;
+}
+
+.carts{
+    z-index: 12;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2%;
+}
+
+.cart{
+    background-color: #a7df0f;
+    width: 26%;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart p{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.cart:hover p{
+    color: white;
+}
+
+/* #cart1:hover{
+    background-size: 330px auto;
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-toptracer.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C683&ssl=1"); 
+}
+
+#cart2:hover{
+    background-size: 330px auto;
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C683&ssl=1");
+}
+
+#cart3:hover{
+    background-size: 330px auto;
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-ag.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C682&ssl=1");
+} */
+
+.footer{
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(to top right, #b0ee06, #039c3d);
+    margin-top: 80px;
+    position: relative;
+}
+
+.footer img{
+    position: absolute;
+    height: 99%;
+    width: 370px;
+}
+
+.fcontent{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 11;
+}
+
+.fcontent .innerlogo{
+    height: 100%;
+    width: 15%;
+    padding: 65px 0 0 45px;
+}
+
+.innerlogo img{
+    height: 90px;
+    width: 120px;
+}
+
+
+.fcontent .innercontent{
+    width: 20%;
+    height: 100%;
+    padding-top: 65px;
+}
+
+.innercontent p{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 40px;
+    color: black;
+}
+
+.innercontent span{
+    color: black;
+    font-size: 16.2px;
+    line-height: 25px;
+}
+
+.innercontent p:hover{
+    color: white;
+}
